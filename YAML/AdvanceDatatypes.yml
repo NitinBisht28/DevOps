@@ -55,8 +55,8 @@ pairexample: !!pairs [job: student,job: gamer]
 unique: !!set
  ?nitin
  ?jatin
- ?rahu;
-
+ ?rahul
+  
 # dictionary: !!omap
 people: !!omap
   - Nitin:
@@ -67,5 +67,6 @@ people: !!omap
       - name: rahulop
       - age: 55
       - class: 12
+---
 # reusing some properties
 
