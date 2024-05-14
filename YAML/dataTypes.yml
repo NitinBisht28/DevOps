@@ -1,0 +1,39 @@
+# String variables
+myself: nitin bisht
+fruits: "mango"
+job: 'swe'
+
+bio: |
+my name is nitin bisht
+bca 4th
+
+# write a sigle line in multiple lines
+message: >
+this will
+all be 
+in one single
+line
+#same as
+message: this will all be in one single line
+
+number: 5473
+marks: 6.67
+booleanValue: !!bool no
+
+# specify the type
+yo: !!int 45
+binarynum: !!int 0b101010
+commanumber: !!int +547_000 #547,000
+floatyo: !!float 54.7
+exponential number: 6.0234E56
+infinity: !!float .inf
+not a num: .nan
+#null
+Surname: !!null null
+nitin: ~
+~: keys can also be null
+
+# dates and time
+ date: !!timestamp 2024-05-14
+
+

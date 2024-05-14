@@ -1,0 +1,18 @@
+"name": "my name is NITIN"
+1: "my roll no is 1"
+---
+#Lists
+- apple
+- mango
+- banana
+- Applehello.yaml
+---
+cities:
+ - new delhi
+ - noida
+ - pithoragarh
+---
+cities: [kumor,bin,titari]
+---
+{name: "nitin",class: "bca 4th"}
+...

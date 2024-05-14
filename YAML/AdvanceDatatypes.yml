@@ -1,0 +1,71 @@
+student: !!seq
+ - name
+ - marks
+ - roll no
+
+ #like this also
+
+ student: [name,marks,roll no]
+
+ # some of the key seq will ne empty
+ # those are knows as sparse seq
+
+ Sparse cities:
+  - pithoragarh
+  - nainital
+  - kumor
+  -
+  - julaghat
+  - null
+
+  # nested sequence
+-
+ - mango
+ - apple
+ - banana
+-
+ - class
+ - subclass
+ - object
+# key value pairs are called maps
+!!map
+
+# nested mapping: map within a map
+name: nitin bisht
+role:
+ age: 19
+ job: swe
+ currently: student
+
+# same as
+name: nitin bisht
+role: {age: 19,job: swe,currently: student}
+#basically a map inside a map
+
+# pairs: keys may have duplicate values
+#!!pairs
+pairexample: !!pairs
+ - job: student
+ - job: gamer
+# same as
+pairexample: !!pairs [job: student,job: gamer]
+ # will stored as an array of hashtables
+
+# !!set will allow you to have unique values
+unique: !!set
+ ?nitin
+ ?jatin
+ ?rahu;
+
+# dictionary: !!omap
+people: !!omap
+  - Nitin:
+      - name: nitin bisht
+      - roll: 150
+      - class: bca 4th
+  - Rahul: 
+      - name: rahulop
+      - age: 55
+      - class: 12
+# reusing some properties
+
