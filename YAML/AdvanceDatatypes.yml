@@ -7,8 +7,8 @@ student: !!seq
 
  student: [name,marks,roll no]
 
- # some of the key seq will ne empty
- # those are knows as sparse seq
+ # some of the key seq will be empty
+ # those are known as sparse seq
 
  Sparse cities:
   - pithoragarh
