@@ -23,7 +23,7 @@ booleanValue: !!bool no
 # specify the type
 yo: !!int 45
 binarynum: !!int 0b101010
-commanumber: !!int +547_000 #547,000
+comma_number: !!int +547_000 #547,000
 floatyo: !!float 54.7
 exponential number: 6.0234E56
 infinity: !!float .inf
