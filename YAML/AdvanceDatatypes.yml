@@ -68,5 +68,23 @@ people: !!omap
       - age: 55
       - class: 12
 ---
-# reusing some properties
+# reusing some properties using Anchors
+Likings: &likes  #give anchor a name
+  fav fruit: mango
+  dislikes: muskmelon
+
+person:
+  name: nitin bisht
+  <<: *likes     #anchor is called
+
+person2:
+  name: rahul
+  <<: *likes
+  dislikes: berries #here we have override the anchor called
+
+# This will look like
+person2:
+  name: rahul
+  fav fruit: mango
+  dislikes: berries
 
