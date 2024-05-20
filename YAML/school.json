@@ -1,0 +1,21 @@
+{
+    "School": [
+        {
+            "name": "Manas",
+            "Principal": "Meenu",
+            "Students": [
+                {
+                    "name": "Nitin",
+                    "roll": 50 ,
+                    "marks": 150
+                },
+                {
+                    "name": "bisht",
+                    "roll": 51 ,
+                    "marks": 152 
+                }
+            ]
+
+        }
+    ]
+}

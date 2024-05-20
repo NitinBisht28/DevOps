@@ -1,0 +1,8 @@
+---
+School:
+- name: Manas
+  principal: Meenu
+  Students:
+  - rno: 12
+    name: nitin 
+    marks: 50
