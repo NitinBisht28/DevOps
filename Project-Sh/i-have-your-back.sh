@@ -3,7 +3,7 @@
 #
 # This script is used to create backup for a file or folder provided.
 #
-# Author: Nitin Bisht
+# Author: Nitin Bisht / Drake.exe
 # Date  : 4/Sep/2024
 # Version: 0.01
 #
