@@ -28,7 +28,7 @@
 #################################################################
 
 # check if the required no. of arguments are passed.
-if[$# -ne 2]; then
+if [ $# -ne 2 ]; then
   echo "usage: $0 <region> <services>"
   exit 1
 fi 
@@ -43,7 +43,7 @@ fi
 # Check if the AWS CLI is configured.
 
 if [ ! -d ~/.aws ]; then
-    echo "AWS CLI is not cofigured. Please confiure it and try again."
+    echo "AWS CLI is not cofigured. Please configure it and try again."
     exit 1
 fi
 
@@ -59,7 +59,7 @@ case $2 in
     rds)
       aws rds describe-db-instances --region $1
       ;;
-    dynamoDB)
+    dynamodb)
       aws dynamodb list-tables --region $1
       ;;
     lambda)
@@ -69,7 +69,7 @@ case $2 in
       aws ec2 describe-volumes --region $1
       ;;
     elb)
-      aws elb describe-load balancers --region $1
+      aws elb describe-load-balancers --region $1
       ;;
     cloudfront)
       aws cloudfront list-distributions --region $1
@@ -89,7 +89,7 @@ case $2 in
     iam)
       aws iam list-users --region $1
       ;;
-    route5)
+    route53)
       aws route53 list-hosted-zones --region $1
       ;;
     cloudformation)
@@ -101,7 +101,3 @@ case $2 in
         ;;
 esac
 
-
-
-
- 
