@@ -1,0 +1,14 @@
+---
+- name: upload a shell script to ur remote host and executing it.
+  hosts: all
+  become: yes
+  tasks:
+    - name: copy the shell script to the remote
+      copy:
+        src: /home/drake/Shell-Scripting/node-health.sh
+        dest: /tmp/node-health.sh
+        mode: '0755'
+    - name: Execute the shell script on the remote server
+      shell: /tmp/node-health.sh
+      args:
+        executable: /bin/bash

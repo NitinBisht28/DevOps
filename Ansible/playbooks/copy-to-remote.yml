@@ -1,0 +1,27 @@
+---
+- name: Playbook to copy files to the  remote servers.
+  hosts: all
+  become: yes
+  tasks:
+    - name: check if the folder already exists
+      ansible.builtin.stat:
+        path: /playbooks
+      register: folder_status
+
+    - name: copy the folder only if it doesn't exist
+      ansible.builtin.copy:
+        src: /home/drake/playbooks
+        dest: /playbooks
+        remote_src: no
+        mode: '0755'
+        owner: root
+        group: root
+      when: not folder_status.stat.exists
+      tags: copy_folder
+
+    - name: output the folder status
+      debug: 
+        msg: "folder exists on the remote server"
+      when: not folder_status.stat.exists
+
+       
